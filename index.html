@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Test</title>
+    </head>
+    <body>
+        <main>
+            <h1>Multi steps form widget</h1>
+            <div class="data">
+                <h2>Profile</h2><br><br><br>
+                <form action="#" method="post">
+                    <label for="First name"></label><br />
+                    <input
+                        type="text"
+                        id="data"
+                        name="First name"
+                        placeholder="First Name"
+                        required
+                    /><br /><br />
+                    <label for="Last name"></label>
+                    <input type="text" id="data" placeholder="Last Name" required /><br /><br />
+                    <label for="sdt"></label>
+                    <input
+                        type="tel"
+                        id="data"
+                        name="sdt"
+                        pattern="[0-9]{10}"
+                        placeholder="Phone"
+                        required
+                    /><br /><br />
+                    <div class="gender">
+                        <label>Gender:</label>
+                        <input
+                            type="radio"
+                            id="female"
+                            name="gender"
+                            value="Female"
+                            required
+                        />
+                        <label for="female">Female</label>
+                        <input
+                            type="radio"
+                            id="male"
+                            name="gender"
+                            value="Male"
+                            required
+                        />
+                        <label for="male">Male</label><br />
+                    </div>
+                    <label for="diaChi"></label><br />
+                    <textarea placeholder="Address" id="data" class="adr" required></textarea><br /><br />
+                    <input type="submit" class="button" value="Next" />
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
